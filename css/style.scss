@@ -1,0 +1,367 @@
+*,:before,:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main-section {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ff2d73, #ff91bc, #f1ddf5, #4bcfff, #27cbff);
+  background-size: 400%;
+  animation: gradientBG 20s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.title {
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 32px;
+  line-height: 64px;
+  color: #cd3232;
+}
+
+.svg-cube {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 767px;
+  max-height: 767px;
+}
+#layer_2_1 {
+  transform: translateY(15px);
+}
+/*___________________CUBE SECTIONS_______*/
+
+.luf {
+
+  /*1*/
+  //transform: scale(0.79, 0.81) translate(-66px, 57px);
+  /*2*/
+  //transform: scale(0.992, 1.017) translate(0px, 4px);
+  /*3*/
+  //transform: scale(0.8,0.81) translate(59px,57px);
+  //test
+
+
+  animation: luf_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.ldf {
+
+  /*1*/
+  //transform: scale(0.82,0.83) translate(-56px,-39px);
+  /*2*/
+  //transform: scale(1.03, 1) translate(8px,-97px);
+  /*3*/
+  //transform: scale(0.82,0.83) translate(63px,-39px);
+  //test
+
+
+  animation: ldf_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.rdf {
+
+  /*1*/
+  //transform: scale(0.82,0.825) translate(30px,-44px);
+  /*2*/
+  //transform: scale(1, 1) translate(-147px, -102px);
+  /*3*/
+  //transform: scale(0.82,0.825) translate(-88px,-44px);
+  //test
+
+
+  animation: rdf_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.ruf {
+
+  /*1*/
+  //transform: scale(0.82,0.84) translate(15px,50px);
+  /*2*/
+  //transform: scale(1.01, 1.03) translate(-162px, -6px);
+  /*3*/
+  //transform: scale(0.82,0.84) translate(-103px,50px);
+  //test
+
+
+  animation: ruf_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+/*BOTTOM*/
+.rub {
+
+  /*1*/
+  //transform: scale(1.08, 1.06) translate(-61px, 20px);
+  /*2*/
+  //transform: scale(0.806) translate(-103px, 60px);
+  /*3*/
+  //transform: scale(1.08, 1.06) translate(-150px, 20px);
+  //test
+
+
+  animation: rub_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.rdb {
+
+  /*1*/
+  //transform: scale(1.0, 1.0) translate(-43px, -77px);
+  /*2*/
+  //transform: scale(0.78, 0.78) translate(-96px, -38px);
+  /*3*/
+  //transform: scale(1.0, 1.0) translate(-140px, -77px);
+  //test
+
+
+  animation: rdb_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.ldb {
+
+  /*1*/
+   //transform: scale(1, 1) translate(-75px, -65px);
+  /*2*/
+  //transform: scale(0.779) translate(65px, -26px);
+  /*3*/
+  //transform: scale(1, 1) translate(22px, -65px);
+  //test
+
+
+  animation: ldb_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+.lub {
+
+  /*1*/
+  //transform: scale(1.04, 1.14) translate(-70px, 25px);
+  //scale(1.04, 1.14) translate(18px, 25px)
+  /*2*/
+  //transform: scale(0.82) translate(68px, 64px);
+  /*3*/
+  //transform: scale(1, 1) translate(25px, 17px);
+  //test
+
+
+  animation: lub_run 7s ease-in-out infinite;
+  transform-origin:50% 50%;
+}
+
+
+
+/*_____________________________front-all__________________________________________*/
+@keyframes luf_run {
+  from {
+    transform: scale(0.79, 0.82) translate(-66px, 58px);
+  }
+  10% {
+    transform: scale(0.8,0.81) translate(59px,57px);
+
+  }
+  30% {
+    transform: scale(0.992, 1.017) translate(0px, 4px);
+  }
+
+  50% {
+    transform: scale(0.8,0.81) translate(59px,57px);
+  }
+  70% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+  85% {
+    transform: scale(0.8,0.81) translate(59px,57px);
+  }
+  to {
+    transform: scale(0.79, 0.82) translate(-66px, 58px);
+  }
+}
+
+@keyframes ldf_run {
+  from {
+    transform: scale(0.82,0.83) translate(-56px,-39px);
+  }
+  10% {
+    transform: scale(0.82,0.83) translate(63px,-39px);
+  }
+  30% {
+    transform: scale(1.03, 1) translate(8px,-97px);
+
+  }
+  50% {
+    transform: scale(0.82,0.83) translate(63px,-39px);
+  }
+  70% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  85% {
+    transform: scale(0.82,0.83) translate(63px,-39px);
+  }
+  to {
+    transform: scale(0.82,0.83) translate(-56px,-39px);
+  }
+}
+
+@keyframes rdf_run {
+  from {
+    transform: scale(0.82,0.825) translate(30px,-44px);
+  }
+  10% {
+    transform: scale(0.82,0.825) translate(-88px,-44px);
+  }
+  30% {
+    transform: scale(1, 1) translate(-147px, -102px);
+  }
+  50% {
+    transform: scale(0.82,0.825) translate(-88px,-44px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(0.82,0.825) translate(-88px,-44px);
+  }
+  to {
+    transform: scale(0.82,0.825) translate(30px,-44px);
+  }
+}
+
+@keyframes ruf_run {
+  from {
+    transform: scale(0.82,0.84) translate(15px,50px);
+  }
+  10% {
+    transform: scale(0.82,0.84) translate(-103px,50px);
+  }
+  30% {
+    transform: scale(1.01, 1.03) translate(-162px, -6px);
+  }
+  50% {
+    transform: scale(0.82,0.84) translate(-103px,50px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(0.82,0.84) translate(-103px,50px);
+  }
+  to {
+    transform: scale(0.82,0.84) translate(15px,50px);
+  }
+}
+
+/*___________________________________________bottom-all_____________________*/
+
+
+@keyframes rub_run {
+  from {
+    transform: scale(1.08, 1.06) translate(-61px, 20px);
+  }
+  10% {
+    transform: scale(1.08, 1.06) translate(-150px, 20px);
+  }
+  30% {
+    transform: scale(0.806) translate(-103px, 60px);
+  }
+  50% {
+    transform: scale(1.08, 1.06) translate(-150px, 20px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(1.08, 1.06) translate(-150px, 20px);
+  }
+  to {
+    transform: scale(1.08, 1.06) translate(-61px, 20px);
+  }
+}
+@keyframes rdb_run {
+  from {
+    transform: scale(1.0, 1.0) translate(-43px, -77px);
+  }
+  10% {
+    transform: scale(1.0, 1.0) translate(-140px, -77px);
+  }
+  30% {
+    transform: scale(0.78, 0.78) translate(-96px, -38px);
+  }
+  50% {
+    transform: scale(1.0, 1.0) translate(-140px, -77px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(1.0, 1.0) translate(-140px, -77px);
+  }
+  to {
+    transform: scale(1.0, 1.0) translate(-43px, -77px);
+  }
+}
+@keyframes ldb_run {
+  from {
+    transform: scale(1, 1) translate(-75px, -65px);
+  }
+  10% {
+    transform: scale(1, 1) translate(22px, -65px);
+  }
+  30% {
+    transform: scale(0.779) translate(65px, -26px);
+  }
+  50% {
+    transform: scale(1, 1) translate(22px, -65px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(1, 1) translate(22px, -65px);
+  }
+  to {
+    transform: scale(1, 1) translate(-75px, -65px);
+  }
+}
+@keyframes lub_run {
+  from {
+    transform: scale(1.04, 1.14) translate(-70px, 25px);
+  }
+  10% {
+    transform: scale(1.06, 1.14) translate(22px, 25px)
+  }
+  30% {
+    transform: scale(0.82) translate(68px, 64px);
+  }
+  50% {
+    transform: scale(1, 1) translate(25px, 17px);
+  }
+  70% {
+    transform: scale(1,1) translate(0, 0);
+  }
+  85% {
+    transform: scale(1, 1) translate(25px, 17px);
+  }
+  to {
+    transform: scale(1.04, 1.14) translate(-70px, 25px);
+  }
+
+}
